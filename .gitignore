@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+release/
+src.bak.issues/
+things to implement/
+pending.md
+CHANGES.md
+yarn.lock
+.env
+*.log
+Thumbs.db
+.DS_Store

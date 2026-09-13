@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "jsx": "react",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "target": "es2017",
+        "types": ["node"]
+    },
+    "exclude": ["node_modules", "backup"]
+}
