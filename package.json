@@ -1,6 +1,6 @@
 {
   "name": "flipflip",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "main": "./dist/main.bundle.js",
   "author": "ififfy",
   "license": "MIT",
@@ -10,7 +10,11 @@
     "start": "electron ./dist/main.bundle.js",
     "development": "rimraf dist && webpack --watch --config ./webpack.dev.js --progress",
     "build": "rimraf dist && webpack --config ./webpack.dev.js --progress",
-    "production": "rimraf dist && webpack --config ./webpack.prod.js --progress"
+    "production": "rimraf dist && webpack --config ./webpack.prod.js --progress",
+    "build:desktop": "bash scripts/build-desktop.sh --all",
+    "build:desktop:mac": "bash scripts/build-desktop.sh --macos",
+    "build:desktop:win": "bash scripts/build-desktop.sh --windows",
+    "build:desktop:linux": "bash scripts/build-desktop.sh --linux"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",

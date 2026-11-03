@@ -17,3 +17,10 @@ app:
 	zip -r release/FlipFlip-Windows-32bit.zip FlipFlip-win32-ia32
 	zip -r release/FlipFlip-Linux.zip FlipFlip-linux-x64
 	zip -r release/FlipFlip-Linux-32bit.zip FlipFlip-linux-ia32
+
+# Version-aware build
+VERSION := $(shell node -e "console.log(require('./package.json').version)")
+build-all: app
+	@echo "Built FlipFlip v$(VERSION)"
+'
+echo "done"
